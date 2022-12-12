@@ -1,0 +1,135 @@
+@import "/src/styles/colors.scss";
+
+#root {
+	display: flex;
+	justify-content: center;
+	height: 100vh;
+	width: 100vw;
+	align-items: center;
+}
+
+article {
+	width: 100%;
+	height: 100%;
+}
+.menu {
+	width: 100%;
+	padding: 10px 0px;
+	height: 50px;
+	top: 0;
+	position: sticky;
+	z-index: 1;
+	background-color: $primary-container;
+	color: $on-primary-container;
+	display: flex;
+	align-items: baseline;
+
+	.company-name {
+		display: inline;
+		font-weight: bold;
+	}
+
+	sub {
+		font-size: 0.7rem;
+		color: rgb(255, 54, 54);
+		font-weight: bold;
+		align-items: flex-end;
+	}
+
+	img {
+		vertical-align: middle;
+		margin: 0 10px;
+		align-self: center;
+	}
+
+	.menu-nav {
+		margin: 0;
+		display: inline;
+		margin-left: 10px;
+		a {
+			font-size: 0.8rem;
+			text-decoration: none;
+			color: $on-primary-container;
+			font-weight: 500;
+			margin: 0 5px;
+		}
+	}
+	.search-form {
+		display: block;
+		margin-right: 5px;
+		margin-left: auto;
+
+		label {
+			font-weight: 500;
+		}
+		input {
+			// vertical-align: middle;
+			margin: 0px 10px;
+
+			font-size: 1rem;
+			background-color: transparent;
+			outline: 1px solid $on-primary-container;
+			border: none;
+			color: $on-primary-container;
+			border-radius: 6px;
+			padding: 5px 5px;
+			transition: outline-width 300ms ease-out, outline-color 500ms ease-out;
+			&:focus-visible {
+				outline: 4px solid $primary;
+			}
+		}
+	}
+}
+
+.forecast-body {
+	width: 100%;
+	height: 100%;
+	background-color: $background;
+	position: absolute;
+	top: 0;
+	z-index: 0;
+	padding-top: 50px;
+}
+
+.loading-screen {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2rem;
+	font-weight: bolder;
+}
+
+.info {
+	display: flex;
+	padding: 0px 100px;
+}
+
+.time-table {
+	margin-left: auto;
+	border-spacing: 10px;
+	border-collapse: separate;
+	th {
+		text-align: right;
+		font-weight: 700;
+	}
+}
+
+.info {
+	h1 {
+		font-weight: 600;
+	}
+}
+
+.weather-panel {
+	display: flex;
+
+	width: 100%;
+	> * {
+		flex: 1;
+	}
+	column-gap: 10px;
+	padding: 10px 20px;
+	// margin: 0px 20px;
+}

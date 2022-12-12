@@ -1,0 +1,27 @@
+@import "/src/styles/colors.scss";
+.forecast-card {
+	color: $on-primary-container;
+	background-color: $primary-container;
+	text-align: left;
+	padding: 10px 15px;
+	border-radius: 10px;
+	font-size: 0.9rem;
+	display: flex;
+	flex-direction: column;
+	row-gap: 7px;
+
+	em {
+		font-weight: bold;
+	}
+	h3 {
+		font-size: 1.2rem;
+		font-weight: bold;
+		text-align: left;
+		margin-bottom: 5px;
+	}
+}
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+.forecast-direction {
+	font-size: 20px;
+	vertical-align: middle;
+}

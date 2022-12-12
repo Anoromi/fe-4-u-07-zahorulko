@@ -1,0 +1,102 @@
+@import "/src/styles/colors.scss";
+
+#root {
+	display: flex;
+	justify-content: center;
+	height: 100vh;
+	width: 100vw;
+	align-items: center;
+	background-image: url("/src/assets/login-background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.log-wrapper {
+	border: 5px dashed $primary-container;
+	border-top-left-radius: 16px;
+	border-bottom-right-radius: 16px;
+	background-color: #c7ebff;
+	width: 500px;
+	padding: 20px 40px;
+
+	legend {
+		font-size: 1.8rem;
+		font-weight: 400;
+		font-style: italic;
+		text-align: center;
+	}
+	fieldset {
+		padding-top: 10px;
+		text-align: left;
+	}
+	div.label-wrapper {
+		margin-top: 10px;
+	}
+}
+
+label {
+	font-weight: 600;
+}
+
+input.basic-input {
+	border: none;
+	background-color: transparent;
+	border-bottom: 2px solid rgb(76, 76, 76);
+	padding-top: 5px;
+	outline: 0;
+	color: black;
+	box-sizing: border-box;
+	display: block;
+	width: 100%;
+	transition: border-color 300ms ease-out;
+	transition: border-width 300ms ease-out;
+
+	&:focus-visible {
+		border-color: rgb(88, 181, 181);
+		border-width: 3px;
+	}
+}
+
+.login-btn-wrapper {
+	margin: 14px 10px 0 10px;
+}
+
+.login-btn {
+	outline: 0px $primary-container solid;
+	outline: none;
+	border: none;
+	background-color: $primary-container;
+	transition: background 0.4s ease-out,
+		outline-width 0.3s cubic-bezier(0.14, 1.19, 0.57, 2.23);
+	font-size: 1.2rem;
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	text-align: center;
+	margin-right: 0;
+	height: 40px;
+	border-radius: 10px;
+	&:hover {
+		background-color: $primary-container;
+		outline: 3px $primary solid;
+	}
+}
+
+.error-text {
+	margin-top: 10px;
+	color: red;
+	font-weight: 700;
+	font-size: 0.9rem;
+}
+
+.basic-checkbox {
+	height: 15px;
+	vertical-align: middle;
+	margin-left: 10px;
+	// visibility: hidden;
+	// // border-color: red;
+	// border: 1px red solid;
+	// outline: none;
+	// background-color: green;
+
+}
